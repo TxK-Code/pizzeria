@@ -1,0 +1,848 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  background: rgb(2, 2, 2);
+}
+
+.headerIndex {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1598346763242-7fbe5769efd9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80');
+  &__opacity {
+    background: rgba(0, 0, 0, .5);
+    position: relative;
+    border-bottom: #ee9b00 3px solid;
+  }
+  &__logoPizza {
+    margin-top: 1rem;
+    width: 13%;
+  }
+  &__bigTitle {
+    padding-top: 2rem;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: #000 3px 5px 5px;
+  }
+  &__title {
+    padding-top: 2rem;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: #000 3px 5px 5px;
+  }
+  &__subtitle {
+    font-size: 25px;
+    margin-top: 1rem;
+    font-weight: 600;
+    text-shadow: #000 3px 5px 5px;
+    padding-bottom: 2rem;
+  }
+  &__text {
+    margin: auto;
+    width: 80%;
+    font-size: 27px;
+    font-weight: 600;
+    text-shadow: #000 3px 5px 5px;
+    margin-bottom: 1rem;
+  }
+  &__textBottom {
+    margin-bottom: 3rem;
+  }
+  &__logoMonaHead {
+    width: 30%;
+    padding-top: 2rem;
+  }
+  &__logoMona {
+    width: 20%;
+    margin-bottom: 1rem;
+    transition: all 200ms ease-in-out;
+    &:hover {
+      width: 23%;
+      margin-bottom: 0rem;
+    }
+  }
+}
+
+.navBar {
+  width: 100%;
+  height: 2.5rem;
+  background: #ba181b;
+  &__nav {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  &__ul {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__li {
+    width: 25%;
+    height: auto;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+    transition: all 200ms;
+    border-bottom: .2rem solid #ee9b00;
+
+    &:hover {
+      color: darken($color: #fff, $amount: 10%);
+      font-weight: 700;
+      text-shadow: #000 1px 5px 5px;
+      cursor: pointer;
+      background: #ee9b00;
+    }
+  }
+}
+
+.indexMenu {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+  &__Pizza {
+    width: 48%;
+  }
+  &__Drinks {
+    width: 48%;
+  }
+}
+
+
+.pizzaCard {
+  width: 80%;
+  height: auto;
+  margin:  auto;
+  border: #ee9b00 solid 3px;
+  border-radius: 13px;
+  text-align: center;
+  background: #ba181b;
+  box-shadow: #333 1px 5px 5px;
+  transition: all 200ms ease;
+  &__img {
+    width : 100%;
+    height : 300px;
+    object-fit: cover;
+    border-bottom: #ee9b00 solid 3px;
+    border-radius: 10px 10px 0 0;
+  }
+  &__title {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    padding-bottom: .3rem;
+  }
+  &:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+  }
+}
+
+.drinksCard {
+  width: 80%;
+  height: auto;
+  margin:  auto;
+  border: #ee9b00 solid 3px;
+  border-radius: 13px;
+  text-align: center;
+  background: #ba181b;
+  box-shadow: #333 1px 5px 5px;
+  transition: all 200ms ease;
+  &__img {
+    width : 100%;
+    height : 300px;
+    object-fit: cover;
+    border-bottom: #ee9b00 solid 3px;
+    border-radius: 10px 10px 0 0;
+  }
+  &__title {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    padding-bottom: .3rem;
+  }
+  &:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+  }
+}
+
+.footerIndex {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  background: #ba181b;
+  border-top: #ee9b00 solid 3px;
+  &__nav {
+    width: 100%;
+  }
+  &__ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  &__li {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  &__liLogo {
+    width: 8%;
+    margin-right: 1rem;
+  }
+  &__liText {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    &:hover {
+      font-weight: 700;
+      text-shadow: #333 1px 5px 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+.modalIndex {
+  width: 75%;
+  height: auto;
+  position: fixed;
+  top: 20%;
+  left: 13%;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  border: 3px solid #ee9b00;
+  border-radius: 13px;
+  box-shadow: #000 1px 5px 5px;
+  &__div {
+    width: 100%;
+  }
+  &__title {
+    font-size: 40px;
+  }
+  &__text {
+    font-size: 30px;
+  }
+  &__img {
+    width: 20%;
+    padding-bottom: 1rem;
+  }
+  &__divBtn {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+  }
+  &__btn {
+    width: 100%;
+    height: auto;
+    background: #000;
+    border: none;
+  }
+  &__btnImg {
+    width: 30%;
+    height: auto;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.pizzasHeader {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: auto;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  background-image: url("https://images.unsplash.com/photo-1600382782907-b4e9c4dda7a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1471&q=80");
+  border-bottom: 3px solid #ee9b00;
+  &__box {
+    width: 70%;
+    margin: auto;
+    background: rgba(186, 24, 27, 0.5);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border: 3px solid #ee9b00;
+    border-radius: 13px;
+  }
+  &__title {
+    font-size: 40px;
+    text-shadow: #000 1px 5px 5px;
+    margin: 0;
+  }
+  &__subtitle {
+    font-size: 17px;
+    text-shadow: #000 1px 5px 5px;
+    margin: 0;
+    font-weight: 600;
+  }
+  &__text {
+    width: 80%;
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: #000 1px 5px 5px;
+    margin: 0;
+    margin: auto;
+    margin-top: 2rem;
+  }
+}
+
+.pizzaShowCard {
+  text-align: center;
+  background: #333;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  padding-top: 2rem;
+  &__box {
+    width: 24%;
+    height: 250px;
+    background: #000;
+    border: #ee9b00 solid 3px;
+    margin: .2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.baseBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  padding-bottom: 3.1rem;
+  margin-top: 3.2rem;
+  margin-bottom: 2rem;
+  &__master01 {
+    width: 50%;
+    background: #ee9b00;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: #ee9b00 solid 3px;
+    border-radius: 13px;
+    background-image: url("../Images/bgs/tomato.jpg");
+    transition: all 150ms ease;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+  &__master02 {
+    width: 50%;
+    background: #ee9b00;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: #ee9b00 solid 3px;
+    border-radius: 13px;
+    background-image: url("../Images/bgs/cream.jpeg");
+    transition: all 150ms ease;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+  &__master03 {
+    width: 50%;
+    background: #ee9b00;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: #ee9b00 solid 3px;
+    border-radius: 13px;
+    background-image: url("../Images/bgs/special.jpg");
+    transition: all 200ms ease;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+  &__shadow {
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 13px;
+
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: #000 0px 5px 5px;
+    margin: 0;
+    padding: 1.2rem;
+  }
+}
+
+.listedPizza {
+  width: 100%;
+  animation: scaled 1s;
+  &__div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    background:rgba(186, 24, 27, 0.5);
+    border-radius: 13px;
+    border: #ee9b00 solid 3px;
+  }
+  &__divInside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: #ee9b00 2px solid;
+    &:hover {
+      background: lighten(rgba(186, 24, 27, 0.5), 20%);
+      cursor: pointer;
+    }
+  }
+  &__name {
+    width: 50%;
+    text-align: left;
+    padding-left: 3rem;
+    margin: auto;
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: #333 1px 5px 5px;
+  }
+  &__price {
+    width: 38%;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: #333 1px 5px 5px;
+  }
+  &__ingredients {
+    width: 82%;
+    margin-top: 0;
+    text-align: left;
+    margin: auto;
+    font-size: 17px;
+    padding-bottom: .3rem;
+    text-shadow: #333 1px 5px 5px;
+
+  }
+}
+
+.listedPizzaEnd {
+  text-align: center;
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  animation: scaled 1s;
+}
+
+@keyframes scaled {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.dessertDrink {
+  width: 100%;
+  height: 20rem;
+  background-image: url("../Images/desserts.jpg");
+  display: flex;
+  border-bottom: 3px solid #ee9b00;
+  &__title {
+    text-align: center;
+    margin: auto;
+    font-size: 45px;
+    text-shadow: #333 1px 5px 5px;
+    width: 70%;
+    background: rgba(186, 24, 27, 0.5);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border: 3px solid #ee9b00;
+    border-radius: 13px;
+  }
+}
+
+.boissons {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border: #ee9b00 solid 3px;
+  border-radius: 13px;
+  padding-bottom: 1.5rem;
+  background:rgba(186, 24, 27, 0.5);
+  &__bigTitle {
+    width: 100%;    
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    margin-top: 0;
+    padding-bottom: 1rem;
+    border-bottom: #ee9b00 3px solid;
+    border-radius: 10px 10px 0 0; 
+    text-shadow: #333 1px 5px 5px;
+    background-image: url("../Images/cans.jpg");
+  }
+  &__div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: .1rem;
+    &:hover {
+      background: lighten(rgba(186, 24, 27, 0.5), 20%);
+      cursor: pointer;
+    }
+  }
+  &__title {
+    width: 58%;
+    margin: 0;
+    text-shadow: #333 1px 5px 5px;
+  }
+  &__prix {
+    width: 40%;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: #333 1px 5px 5px;
+  }
+}
+
+.desserts {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border: #ee9b00 solid 3px;
+  border-radius: 13px;
+  padding-bottom: 1.5rem;
+  background:rgba(186, 24, 27, 0.5);
+  margin-bottom: 2rem;
+  &__bigTitle {
+    width: 100%;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    margin-top: 0;
+    text-shadow: #333 1px 5px 5px;
+    border-bottom: #ee9b00 3px solid;
+    border-radius: 10px 10px 0 0; 
+    background-image: url("../Images/tiramisu.jpg");
+  }
+  &__div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: .1rem;
+    &:hover {
+      background: lighten(rgba(186, 24, 27, 0.5), 20%);
+      cursor: pointer;
+    }
+  }
+  &__title {
+    width: 58%;
+    text-shadow: #333 1px 5px 5px;
+    margin: 0;
+  }
+  &__prix {
+    width: 40%;
+    margin: 0;
+    font-size: 20px;
+    text-shadow: #333 1px 5px 5px;
+    font-weight: 700;
+  }
+}
+
+.formContact {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 3px solid #ee9b00;
+    border-radius: 13px;
+    padding: 2rem;
+    background: rgba(186, 24, 27, 0.5);
+  }
+  &__helloTitle {
+    margin: 0;
+    margin-bottom: 0.8rem;
+    text-shadow: #333 2px 2px 2px;
+  }
+  &__helloSubtitle {
+    margin: 0;
+    margin-bottom: 2.5rem;
+    font-size: 20px;
+    text-shadow: #333 2px 2px 2px;
+  }
+  &__title {
+    margin: 0;
+    text-shadow: #333 2px 2px 2px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &__input {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    background: none;
+    border: none;
+    font-size: 17px;
+    border-bottom: #ee9b00 2px solid;
+    transition: 200ms all;
+    &:focus {
+      outline: none;
+      background: rgba(186, 24, 27, 0.5);
+    }
+    &:hover {
+      background: rgba(186, 24, 27, 0.5);
+      cursor: pointer;
+    }
+  }
+  &__textarea {
+    margin-top: 0.5rem;
+    background: none;
+    border: none;
+    font-size: 17px;
+    border-bottom: #ee9b00 2px solid;
+    transition: 180ms background;
+    resize: vertical;
+    &:focus {
+      outline: none;
+      background: rgba(186, 24, 27, 0.5);
+    }
+    &:hover {
+      background: rgba(186, 24, 27, 0.5);
+      cursor: pointer;
+    }
+  }
+  &__sendButton {
+    width: 40%;
+    margin: auto;
+    margin-top: 1.5rem;
+    border: solid 3px #ee9b00;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: #333 1px 3px 3px;
+    padding: 0.5rem;
+    background: lighten(rgba(186, 24, 27, 0.5), 20%);
+    transition: 200ms all;
+    &:hover {
+      box-shadow: #333 3px 5px 5px;
+      cursor: pointer;
+    }
+  }
+  &__divInfo {
+    position: absolute;
+    right: 5%;
+    width: 5%;
+    height: 5%;
+  }
+  &__divInfo__btn {
+    width: 100%;
+    background: none;
+    border: none;
+  }
+  &__divInfo__img {
+    width: 100%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.contactBanner {
+  width: 100%;
+  height: 20rem;
+  background: url("../Images/whereBanner.png");
+  text-align: center;
+  border-bottom: #ee9b00 solid 3px;
+  &__div {
+    padding-top: 2rem;
+  }
+  &__title {
+    margin: 0;
+  }
+}
+
+.contactMap {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1rem;
+  &__img {
+    width: 1172px;
+    height: 640px;
+    object-fit: contain;
+    border: #ee9b00 solid 3px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.modalIndexInfos {
+  width: 75%;
+  height: auto;
+  position: fixed;
+  top: 10%;
+  left: 13%;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  border: 3px solid #ee9b00;
+  border-radius: 13px;
+  box-shadow: #000 1px 5px 5px;
+  &__div {
+    width: 80%;
+    margin: auto;
+  }
+  &__title {
+    font-size: 40px;
+  }
+  &__text {
+    font-size: 25px;
+  }
+  &__textend {
+    font-size: 17px;
+  }
+  &__img {
+    width: 20%;
+    padding-bottom: 1rem;
+  }
+  &__divBtn {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+  }
+  &__btn {
+    width: 100%;
+    height: auto;
+    background: #000;
+    border: none;
+  }
+  &__btnImg {
+    width: 30%;
+    height: auto;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__span {
+    font-weight: 700;
+  }
+}
+
+.adminPageTitle {
+  text-align: center;
+  text-shadow: #000 1px 5px 5px;
+  background: #ba181b;
+  border-bottom: 2px solid #ee9b00;
+  border-top: 2px solid #ee9b00;
+  padding-bottom: 0.4rem;
+  margin-top: 2.5rem;
+}
+
+.adminPage {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+  &__box {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 34.3vh;
+  }
+  &__card {
+    width: 29%;
+    margin : 0;
+    background: rgba(186, 24, 27, 0.5);
+    padding: 0.5rem;
+    border: #ee9b00 solid 3px;
+    border-radius: 13px;
+    &:hover {
+      background: lighten(rgba(186, 24, 27, 0.5), 20%);
+      cursor: pointer;
+    }
+  }
+  &__cardTitle {
+    margin: 0;
+    margin-bottom: 1rem;
+  text-shadow: #000 1px 5px 5px;
+
+  }
+  &__cardImg {
+    border: #ee9b00 solid 2px;
+    border-radius: 13px;
+    &:hover {
+      box-shadow: rgb(0, 0, 0) 1px 5px 5px;
+    }
+  }
+}
